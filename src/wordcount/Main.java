@@ -49,6 +49,14 @@ public class Main
             }
         });
 
+        Collections.sort(sortedMap, new Comparator<HashMap.Entry<String, Integer>>()
+        {
+            public int compare (HashMap.Entry<String, Integer> o1, HashMap.Entry<String, Integer> o2)
+            {
+                return o1.getKey().compareToIgnoreCase(o2.getKey());
+            }
+        });
+
         for (int i = 0; i < 50; i++)
         {
             System.out.println((i + 1) + ". " + sortedMap.get(i));
