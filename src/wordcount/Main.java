@@ -37,7 +37,7 @@ public class Main
         }
 
         ArrayList<HashMap.Entry<String, Integer>> sortedMap = new ArrayList<>();
-        List<String> alphArrList = new ArrayList<String>();
+        
 
         sortedMap.addAll(wordCountHashMap.entrySet());
 
@@ -51,7 +51,7 @@ public class Main
 
         for (int i = 0; i < 50; i++)
         {
-            System.out.println(sortedMap.get(i));
+            System.out.println((i + 1) + ". " + sortedMap.get(i));
         }
     }
 }
